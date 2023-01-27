@@ -17,7 +17,7 @@ pipeline {
 
         stage('Frontend unit test ') {
           steps {
-            sh 'cd curriculum-front && npm i --max-old-space-size=1000 && npm rum test:unit'
+            sh 'cd curriculum-front && npm i --max-old-space-size=256 && npm rum test:unit'
           }
         }
 
